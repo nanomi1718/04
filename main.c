@@ -7,10 +7,20 @@
 
 /* run this program using the console pauser or add your own getch, system("pause") or input loop */
 int main(int argc, char *argv[]) {
-int a;
-	printf("input the year : ");
-	scanf("%d", &a);
-	printf(" is the year %d the leap year? : %d\n",a, (a%4 == 0 && a%100!=0) || a%400==0);
-	return 0;
-}
+unsigned int x;
+	int b;
+	printf("input a number : ");
+	scanf("%ui", &x);
 
+	for (b=0; x !=0; x>>= 1)
+	{
+		if (x & 1)
+		{
+		b++;
+	    }
+		
+	}
+	printf("the result is : %i\n", b);
+
+		return 0;
+}

@@ -7,20 +7,11 @@
 
 /* run this program using the console pauser or add your own getch, system("pause") or input loop */
 int main(int argc, char *argv[]) {
-unsigned int x;
-	int b;
-	printf("input a number : ");
-	scanf("%ui", &x);
+	int a;
+	printf(" input the second : ");
+	scanf("%d", &a);
+	printf("the time for %d second is %d : %d : %d", a, a/3600, (a%3600)/60 ,a%60);
+	
+	return 0;
 
-	for (b=0; x !=0; x>>= 1)
-	{
-		if (x & 1)
-		{
-		b++;
-	    }
-		
-	}
-	printf("the result is : %i\n", b);
-
-		return 0;
 }

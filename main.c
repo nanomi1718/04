@@ -3,15 +3,11 @@
 /* run this program using the console pauser or add your own getch, system("pause") or input loop */
 
 int main (void) {
-    int a, b;
-    printf("input two integers: ");
-    scanf("%i, %i", &a, &b);
+    int sec;
+    printf("input the second : ");
+    scanf("%i", &sec);
 
-    printf(" + result is %d\n", a + b);
-    printf(" - result is %d\n", a - b);
-    printf(" * result is %d\n", a * b);
-    printf(" / result is %d\n", a / b);
-    printf(" %% result is %d\n", a % b);
-
-	return 0;
+    printf(" Time is %i:%i\n", sec/60 , sec%60);
+	
+    return 0;
 }

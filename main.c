@@ -2,20 +2,14 @@
 
 /* run this program using the console pauser or add your own getch, system("pause") or input loop */
 
-int main (void) {
-    unsigned int x;
-	int b;
-    
-	printf("input a number : ");
-	scanf("%ui", &x);
+int main (void) 
+{
+	int sec;
 
-	for (b=0; x!=0; x>>= 1)
-	{
-		if (x&1)
-			b++;
-	
-	}
-	printf("The result is : %i\n", b);
+	printf("input the second : ");
+	scanf("%i", &sec);
+
+	printf("The time is %i : %i : %i\n", sec/3600, (sec%3600)/60, sec%60);
 
     return 0;
 }
